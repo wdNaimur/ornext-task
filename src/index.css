@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "Goodly";
+  src: url("/font/goodly-regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@keyframes slow-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.slow-spin {
+  animation: slow-spin 8s linear infinite;
+}
+
+@import "tailwindcss";
+@theme {
+  --color-primary-500: #005cff;
+  --color-secondary: #1f1e1e;
+  --color-base-100: #ffffff;
+  --color-base-200: #d7dcff;
+  --font-archivo: "Archivo", sans-serif;
+  --font-goodly: "Goodly", sans-serif;
+}

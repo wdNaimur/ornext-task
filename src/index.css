@@ -5,6 +5,7 @@
   font-weight: normal;
   font-style: normal;
 }
+/*hero spin animation*/
 @keyframes slow-spin {
   0% {
     transform: rotate(0deg);
@@ -16,6 +17,20 @@
 
 .slow-spin {
   animation: slow-spin 8s linear infinite;
+}
+/* Zoom Background Animation */
+@keyframes bgZoom {
+  0%,
+  100% {
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+.animate-bgZoom {
+  animation: bgZoom 4s ease-in-out infinite;
 }
 
 @import "tailwindcss";

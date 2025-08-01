@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { CiUser } from "react-icons/ci";
 import { FaUser, FaBars, FaTimes } from "react-icons/fa";
+import { TiUserOutline } from "react-icons/ti";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,9 +37,9 @@ const Navbar = () => {
 
           {/* Login and Hamburger */}
           <div className="flex items-center gap-4">
-            <div className="hidden md:flex items-center gap-2 text-sm cursor-pointer hover:text-base-200">
+            <div className="hidden md:flex items-center gap-4 text-sm cursor-pointer hover:text-base-200 transition-all">
               <span>log in</span>
-              <FaUser className="text-base" />
+              <CiUser className="text-xl opacity-60" />
             </div>
 
             {/* Hamburger Icon */}

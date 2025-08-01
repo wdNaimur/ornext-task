@@ -3,6 +3,8 @@ import PlanSection from "./components/PlanSection";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import TrustedSection from "./components/TrustedSection";
+import QuestionSection from "./components/QuestionSection";
+import Footer from "./components/footer";
 
 function HomePage() {
   return (
@@ -18,6 +20,12 @@ function HomePage() {
         <section>
           <PlanSection />
         </section>
+        <section>
+          <QuestionSection />
+        </section>
+        <footer>
+          <Footer />
+        </footer>
       </main>
     </div>
   );

@@ -109,9 +109,12 @@ const PlanSection = () => {
   const tabs = Object.keys(pricingPlans);
 
   return (
-    <div className="min-h-screen text-white py-16 px-4 flex flex-col items-center">
+    <div className="text-white py-16 px-4 flex flex-col items-center">
+      <h1 className="font-archivo font-bold text-5xl mb-6 text-center">
+        Choose Your <span className="text-primary-500">Plan</span>
+      </h1>
       {/* Tabs */}
-      <div className="mb-8 flex gap-2">
+      <div className="mb-4 flex gap-2">
         {tabs.map((tab) => (
           <button
             key={tab}
@@ -132,14 +135,14 @@ const PlanSection = () => {
         {pricingPlans[activeTab].map((plan, idx) => (
           <div
             key={idx}
-            className={`rounded-2xl bg-black/40 backdrop-blur-2xl p-6 shadow-md flex flex-col items-center ${
+            className={`rounded-2xl bg-black/40 backdrop-blur-2xl p-6 shadow-md flex flex-col items-center border-2 hover:border-primary-500 border-gray-800 transition-all ${
               plan?.mostPopular ? "md:scale-110" : ""
             }`}
           >
-            <h2 className="text-4xl font-bold">{plan.name}</h2>
-            <p className="text-yellow-500 mb-6">{plan.save}</p>
+            <h2 className="text-5xl font-bold">{plan.name}</h2>
+            <p className="text-yellow-500 mb-6 font-poppins">{plan.save}</p>
 
-            <ul className="space-y-3 mb-6 text-sm">
+            <ul className="space-y-3 mb-6 text-sm opacity-80">
               {plan.features.map((feature, i) => (
                 <li key={i} className="flex items-start gap-2">
                   <span className="text-green-500">

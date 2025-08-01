@@ -3,7 +3,7 @@ import React from "react";
 const HeroSection = () => {
   return (
     <header className="max-w-6xl container  mx-auto ps-4 select-none overflow-x-hidden">
-      <div className="relative md:min-h-[810px] sm:min-h-[800px] min-h-[615px] ">
+      <div className="relative md:min-h-[810px] sm:min-h-[800px] min-h-[615px]">
         {/* image box  */}
         <div className="absolute right-0 w-2/3 h-full sm:scale-100 sm:top-0 -top-16 scale-75">
           <span className="absolute top-0 right-0">

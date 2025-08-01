@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { CiUser } from "react-icons/ci";
 import { FaUser, FaBars, FaTimes } from "react-icons/fa";
-import { TiUserOutline } from "react-icons/ti";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

@@ -13,7 +13,7 @@ const trustedLogos = [
 const TrustedSection = () => {
   return (
     <div className="container mx-auto px-4">
-      <h1 className="text-white font-archivo font-bold text-2xl text-center">
+      <h1 className="text-white font-poppins font-semibold text-3xl text-center">
         Trusted by 99+ Founder Worldwide
       </h1>
       <div className="flex flex-wrap justify-center items-center mt-8 gap-x-8 gap-y-4">
@@ -22,7 +22,7 @@ const TrustedSection = () => {
             key={index}
             src={logo.src}
             alt={logo.alt}
-            className={logo.height}
+            className={`${logo.height} grayscale-25`}
           />
         ))}
       </div>
